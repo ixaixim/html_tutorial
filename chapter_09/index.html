@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Neel Misciasci" />
+    <meta name="description" content="My first web page." />
+    <!-- This information can be accessed by search engines. -->
+    <title>My first Web Page</title>
+    <link rel="icon" href="html5.png" type="image/x-icon" />
+    <!-- This is the icon that appears in the tab of the browser. -->
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <!-- <style>
+        can add style here, or with a link
+    </style> -->
+    <!-- Head section is not seen. -->
+  </head>
+
+  <body>
+    <header>
+      <h1>Submit forms</h1>
+    </header>
+    <main>
+      <h1>Understanding HTML Input Attributes</h1>
+      <article>
+        <h2>Explanation of some options</h2>
+        <p>
+          HTML provides a variety of attributes that can be used with input
+          elements to control their behavior and appearance. In this article,
+          we'll explore several commonly used attributes for text input fields:
+        </p>
+
+        <h2>type="text"</h2>
+        <p>
+          The <code>type="text"</code> attribute specifies that the input should
+          be a single-line text field. This is used when you want to collect
+          short, plain text input from users, such as their name or email
+          address.
+        </p>
+
+        <h2>name="firstName"</h2>
+        <p>
+          The <code>name="firstName"</code> attribute specifies the name of the
+          input field. This name is essential when submitting form data to a
+          server. It acts as the identifier for this input in the submitted
+          data, allowing the server to process it correctly.
+        </p>
+
+        <h2>id="firstName"</h2>
+        <p>
+          The <code>id="firstName"</code> attribute specifies a unique
+          identifier for the input field. This ID can be used in JavaScript or
+          CSS to manipulate the element. It's particularly useful when you need
+          to apply specific styling or add interactivity to this input.
+        </p>
+
+        <h2>placeholder="some placeholder"</h2>
+        <p>
+          The <code>placeholder="some placeholder"</code> attribute provides a
+          short hint that describes the expected value of the input field. It's
+          displayed in the field when it's empty, giving users a clue about what
+          kind of input is required.
+        </p>
+
+        <h2>autocomplete="on"</h2>
+        <p>
+          The <code>autocomplete="on"</code> attribute specifies whether the
+          browser should enable autocomplete for the input field. When enabled,
+          the browser may suggest previously entered values to the user, making
+          the form-filling process more convenient.
+        </p>
+
+        <h2>required</h2>
+        <p>
+          The <code>required</code> attribute specifies that the input field
+          must be filled out before the form can be submitted. This ensures that
+          important information is not left blank and provides validation on the
+          client side to prevent incomplete submissions.
+        </p>
+
+        <h2>autofocus</h2>
+        <p>
+          The <code>autofocus</code> attribute specifies that the input field
+          should automatically receive focus when the page loads. This can be
+          handy for improving user experience by immediately focusing on the
+          most important input field when the page loads.
+        </p>
+
+        <p>
+          These attributes play a crucial role in controlling the behavior and
+          appearance of text input fields in HTML forms. Understanding how to
+          use them effectively can enhance the usability and functionality of
+          your web forms.
+        </p>
+      </article>
+
+      <hr />
+
+      <article id="contact"></article>
+      <h2>Contact Me</h2>
+      <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+          <legend>General Information</legend>
+        <p>
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="some placeholder"
+            autocomplete="on"
+            required
+            autofocus
+          />
+        </p>
+        <p>
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="some placeholder"
+            autocomplete="on"
+            required
+          />
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="some placeholder"
+            autocomplete="on"
+            required
+          />
+        </p>
+        <p>
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="555 - 555 555"
+            autocomplete="on"
+            pattern="[0-9]{3}[-\s]?[0-9]{3}[-\s]?[0-9]{4}"
+            required
+          />
+        </p>
+        <p>
+          <label for="decade">Favorite Decade</label>
+          <input type="number" id="decade" min="1900" max="2090" step="10" />
+        </p>
+        <p>
+          <label for="coffee">Favorite Coffee</label>
+          <select name="cofee" id="coffee">
+            <optgroup label="Coffees">
+              <option value="latte">latte</option>
+              <option value="cappuccino">cappuccino</option>
+              <option value="espresso">espresso</option>
+            </optgroup>
+            <optgroup label="Teas">
+              <option value="green">green</option>
+              <option value="black">black</option>
+            </optgroup>
+            <option value="others">Others</option>
+          </select>
+        </p>
+        <p>
+          Another Favorite Coffee type of list
+          <label for="coffee"></label>
+          <input type="text" name="coffee" id="çoffee" list="coffee-list" />
+          <datalist id="coffee-list">
+            <option value="coffee"></option>
+            <option value="tea"></option>
+            <option value="water"></option>
+          </datalist>
+        </p>
+
+
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Favorite Foods</legend>
+        <p>
+          <input type="radio" name="food" id="tacos" value="tacos">
+          <label for="tacos">Tacos</label>
+        </p>
+        <p>
+          <input type="radio" name="food" id="pizza" value="pizza">
+          <label for="pizza">pizza</label>
+        </p>
+        <p>
+          <input type="radio" name="food" id="sushi" value="sushi">
+          <label for="sushi">sushi</label>
+        </p>
+        <!-- add other -->
+        <p>
+          <input type="radio" name="food" id="other" value="other">
+          <label for="other">other</label>
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Send me a Note</legend>
+        <label for="message">Your Message:</label>
+        <br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+      </fieldset>
+      <br>
+      <button type="submit">Submit</button>
+      <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+      <button type="reset">Reset</button>
+      </form>
+    </main>
+  </body>
+</html>

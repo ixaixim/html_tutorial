@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Neel Misciasci" />
+    <meta name="description" content="My first web page." />
+    <!-- This information can be accessed by search engines. -->
+    <title>My first Web Page</title>
+    <link rel="icon" href="html5.png" type="image/x-icon" />
+    <!-- This is the icon that appears in the tab of the browser. -->
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <!-- <style>
+        can add style here, or with a link
+    </style> -->
+    <!-- Head section is not seen. -->
+  </head>
+
+  <body>
+    <header>
+      <h1>Semantic elements</h1>
+
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <article>
+        <h2>Why and what are they?</h2>
+        <p>
+          The purpose of semantic HTML elements is to provide meaning and
+          structure to the content of a web page. Semantic HTML elements are
+          designed to describe the content of the page in a way that is
+          meaningful and understandable to both humans and machines.
+        </p>
+        <p>The following are some examples of semantic HTML elements:</p>
+
+        <ul>
+          <li><code>&lt;header&gt;</code></li>
+          <li><code>&lt;nav&gt;</code></li>
+          <li><code>&lt;main&gt;</code></li>
+          <li><code>&lt;article&gt;</code></li>
+          <li><code>&lt;section&gt;</code></li>
+          <li><code>&lt;aside&gt;</code></li>
+          <li><code>&lt;footer&gt;</code></li>
+          <li><code>&lt;figure&gt;</code></li>
+          <li><code>&lt;figcaption&gt;</code></li>
+        </ul>
+
+        <p>
+          Using semantic HTML elements can help to improve the accessibility,
+          usability, and maintainability of a web page. By using these elements,
+          web developers can create web pages that are easier to understand and
+          navigate, and that are more easily indexed by search engines.
+        </p>
+      </article>
+      <article>
+        <h2>
+          This is the <code>main</code> area, and we write a topic within one
+          <code>article</code>.
+        </h2>
+        <p>
+          What is the difference between <code>article</code> and
+          <code>section</code>? <code>article</code> has a clear topic, whereas
+          <code>section</code> is more generic.
+        </p>
+      </article>
+
+      <hr />
+
+      <article>
+        <h2>This is a new article (or section)</h2>
+        <p>
+          Did you know that you can install the plugin
+          <code>HTML outliner</code> on your browser to view the semantic
+          sections of any website?
+        </p>
+      </article>
+
+      <hr />
+
+      <article>
+        <h2>Div and span element</h2>
+        <p>Div is a semantic element with no meaning. So for span.</p>
+      </article>
+
+      <hr />
+
+      <article>
+        <h2>Aside and detail semantic elements</h2>
+        <p>
+          The aside element is used to define content that is tangentially
+          related to the main content of the page. This could include things
+          like sidebars, callouts, or related links.
+        </p>
+        <p>
+          The details element is used to create a disclosure widget that can be
+          used to show or hide additional information.
+        </p>
+        <aside>
+          <details>
+            <summary>
+              This is a summary. You can incude a question or something else.
+              Click to see the rest. What is <mark>2+2=?</mark>
+            </summary>
+            <p>Here goes the answer: 4</p>
+          </details>
+        </aside>
+      </article>
+    </main>
+  </body>
+</html>

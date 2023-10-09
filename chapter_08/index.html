@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Neel Misciasci" />
+    <meta name="description" content="My first web page." />
+    <!-- This information can be accessed by search engines. -->
+    <title>My first Web Page</title>
+    <link rel="icon" href="html5.png" type="image/x-icon" />
+    <!-- This is the icon that appears in the tab of the browser. -->
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <!-- <style>
+        can add style here, or with a link
+    </style> -->
+    <!-- Head section is not seen. -->
+  </head>
+
+  <body>
+    <header>
+      <h1>Tables in HTML</h1>
+
+      <nav aria-label="primary-navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <article>
+        <h2>Basics of tables</h2>
+        <p>
+          Check with <code>Inspect</code>: the table takes only as much space as
+          the width of the table.
+        </p>
+        <p>Note: adding <code>thead, tbody, tfoot</code> adds semantics to the table (useful for search engines).</p>
+        <table>
+          <caption>Table caption</caption>
+          
+          <thead>
+            <!-- Table header -->
+            <tr>
+              <th>&nbsp;</th>   
+              <!-- creates a blank header space before time and event -->    
+              <th scope="col"> Time </th>
+              <th scope="col"> Event </th>
+              <!-- Table header -->
+            </tr>
+          </thead>
+          <tbody>
+        <tr>
+          <!-- table row-->
+          <th scope="row">First header row</th>
+          <td>
+            <!-- table data-->
+            <time datetime="11:00">11am</time>-<time datetime="12:00"
+              >12am</time
+            >
+          </td>
+          <td>Another table entry next to the first time entry</td>
+        </tr>
+        <tr>
+          <!-- table row-->
+          <th scope="row">Second header row</th>
+          <td>
+            <!-- table data-->
+            <time datetime="12:00">12am</time>-<time datetime="13:00"
+              >13am</time
+            >
+          </td>
+          <td>Another table entry next to the second time entry</td>
+        </tr>
+        <tr>
+          <th scope="row">Third header row</th>
+          <td colspan =2> Using colspan takes two cols</td>
+        </tr>
+        <tr>
+          <th rowspan=2 scope="row">Fourth header row</th>
+          <td rowspan =2> Using rowspan takes two rows</td>
+          <td> Entry 1</td>
+        </tr>
+        <tr>
+          <td> Entry 2</td>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan =3> This is the footer semantic element.</td>
+          </tr>
+        </tfoot>
+      </table>
+      </article>
+    </main>
+  </body>
+</html>

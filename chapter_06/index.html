@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Neel Misciasci">
+    <meta name="description" content="My first web page.">
+    <!-- This information can be accessed by search engines. -->
+    <title>My first Web Page</title>
+    <link rel="icon" href="html5.png" type="image/x-icon">
+    <!-- This is the icon that appears in the tab of the browser. -->
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <!-- <style>
+        can add style here, or with a link
+    </style> -->
+    <!-- Head section is not seen. -->
+  </head>
+
+  <body>
+    <h1>Hello World!</h1>
+
+    <hr>
+    <!-- Horizontal Rule -->
+
+    <h2>Basics of HTML</h2>
+
+    <hr>
+
+    <h3>Images</h3>
+    <p>First image.</p>
+    <img
+      src="img/html_logo_300x300.png"
+      alt="HTML5 Logo"
+      title="I am learning HTML5"
+      width="300"
+      height="300"
+    >
+    <p>Scroll down for more...</p>
+    <!-- alt displays text in case the image is not available.-->
+    <!-- title displays text when the mouse hovers over the image.-->
+    <!-- recommended to provide width and height due to cumulative layout shift (to give the browser an idea of the ratio of the image.)-->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p>Second image.</p>
+    <figure>
+      <img
+        src="img/caribbean.jpg"
+        alt="Caribbean"
+        title="Caribbean"
+        width="400"
+        height="225"
+        loading="lazy"
+      >
+      <figcaption>Caribbean</figcaption>
+    </figure>
+    <!-- keep the same width and height of the original image ( you can see that by opening the image with VSCode, bottom of page.)-->
+    <!-- loading="eager" (default) loads the image as soon as possible.-->
+    <!-- loading="lazy" loads the image when it is about to be seen. Helps pages load faster.-->
+    <!-- to visualize it lazy helps, open dev tools and go to Network-Img and see that the image is loaded only when needed.  -->
+    <p>Third image.</p>
+    <figure>
+    <img src="img/vacation.jpg" alt="Cancun Vacation" title="It's 5 O' Clock Somewhere!" loading="lazy" width="400" height="267">
+    <figcaption>Another beach</figcaption>
+    </figure>
+    <h3>Notes about figure keyword: it can contain code</h3>
+    <figure>
+      <figcaption>An example of HTML5 code</figcaption>
+      <p>
+        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+      </p>
+    </figure>
+  </body>
+</html>
