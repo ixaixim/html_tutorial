@@ -1,7 +1,8 @@
-# HTML Full Course for Beginners
+# HTML5 Full Course for Beginners
 
 This repository contains the source code and resources for the HTML Full Course for Beginners, a comprehensive beginner tutorial and complete course with over 4 hours of HTML instruction. The course, taught by Dave Gray, covers HTML5 and is divided into 10 chapters.
 
+![HTML5 Logo](img/html_logo.png)
 ## Overview
 
 - **Instructor**: Dave Gray
